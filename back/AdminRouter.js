@@ -10,7 +10,7 @@ AdminRouter.post("/register",async(req,res)=>{
 
 })
 
-    AdminRouter.post("/Login",async(req,res)=>{
+    AdminRouter.post("/login",async(req,res)=>{
         if(req.body.username && req.body.password){
             let UsertoLogin = await AdminModel.findOne(req.body).select("_password")
 

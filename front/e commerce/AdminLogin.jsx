@@ -13,22 +13,25 @@ const AdminLogin = () => {
     if (adminAuth) {
       navigate("/")
     }
+  // console.log(adminAuth)
+
   }, [])
 
   const loginHandle = async () => {
-    
-    let result = await axios.post("http://localhost:4000/admin/login", {
+
+    let result = await axios.post("http://localhost:8000/admin/login", {
       username: AdminUsername,
       password: AdminPassword
     })
     result = result.data
-    if (result.name) {
+    if (result.username) {
       localStorage.setItem("adminData", JSON.stringify(result))
       navigate("/")
     }
     else {
       alert("Please Enter Correct Detils")
     }
+    console.log(result)
   }
 
   return (

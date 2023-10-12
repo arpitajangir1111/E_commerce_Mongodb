@@ -18,10 +18,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <Header/>
   <Routes>
     <Route path='/' element={<Home/>}/>
-    <Route path='LoginUser' element={<LoginUser/>}/>
-    <Route path='AdminLogin' element={<AdminLogin/>}/>
-    <Route path='UserSignup' element={<UserSignup/>}/>
-      <Route path='AdminSignup' element={<AdminSignup/>}/>
+    <Route path='/LoginUser' element={<LoginUser/>}/>
+    <Route path='/AdminLogin' element={<AdminLogin/>}/>
+    <Route path='/UserSignup' element={<UserSignup/>}/>
+      <Route path='/AdminSignup' element={<AdminSignup/>}/>
     
 
   </Routes>
