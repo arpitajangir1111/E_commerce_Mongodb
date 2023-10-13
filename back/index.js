@@ -9,6 +9,7 @@ const connection = mongoose.connect ("mongodb://127.0.0.1:27017/Ecommerce")
 const app = express()
 app.use(express.json())
 app.use(cors())
+app.use('/uploads',express.static('uploads'))
 
 app.use("/product",ProductRouter)
 app.use('/User',UserRouter)

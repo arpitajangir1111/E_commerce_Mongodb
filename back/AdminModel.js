@@ -4,7 +4,7 @@ const AdminSchema = new mongoose.Schema({
     name:String,
     email:String,
     username:String,
-    password:String,
+    password:String
 
 });
 const AdminModel = mongoose.model("admins",AdminSchema);
