@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios'
-// import './AddProduct.css'
 import { useNavigate } from 'react-router-dom'
+// import "./Addproduct.css"
 
 function AddProduct() {
     const [name , setName] = useState("")

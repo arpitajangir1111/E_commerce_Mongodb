@@ -15,7 +15,7 @@ function Header() {
       {
         adminAuth ?
           <>
-            <Link to="/AllProducts">AllProduct</Link>
+            <Link to="/AllProducts">All Product</Link>
             <Link to="/AddProduct">Add Product</Link>
             <Link to="/edit">Edit Product</Link>
 
@@ -34,7 +34,7 @@ function Header() {
       {
         // {(JSON.parse(adminAuth).name) || (JSON.parse(userAuth).name)}
         userAuth || adminAuth ?
-          <Link to="/" onClick={() => { localStorage.clear(); navigate("/") }}>Logout <span id='loggername'>&#40; {adminAuth ? JSON.parse(adminAuth).name : ""}{userAuth ? JSON.parse(userAuth).name : ""} &#41;</span> </Link>
+          <Link to="/"  onClick={() => { localStorage.clear(); navigate("/") }}>Logout  </Link>
           :
           <>
             <Link to="/userLogin">Login</Link>

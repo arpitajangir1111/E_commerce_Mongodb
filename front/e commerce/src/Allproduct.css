@@ -1,3 +1,13 @@
 .pro{
     display: flex;
+    flex-wrap: wrap;
+}
+
+.allProduct a{
+    color: black;
+    
+}
+.allProduct ul li {
+    list-style: none;
+    display: flex;
 }

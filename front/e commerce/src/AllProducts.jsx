@@ -33,7 +33,18 @@ if (result.data) {
 }
   return (
     <div className='allProduct'>
-        <h1>All Products</h1>
+        {/* <h1>All Products</h1> */}
+<ul>
+    <li><a href="#">All Products</a></li>
+    <li><a href="#">Electronics</a></li>
+    <li><a href="#">Men's clothing</a></li>
+    <li><a href="#">Women's clothing</a></li>
+    <li><a href="#">Beauty Products</a></li>
+
+
+</ul>
+
+
 <div className="pro">
     {allproduct.map((product,index)=>{
         return(
